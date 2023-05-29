@@ -104,7 +104,7 @@ input 값이 2개(list, 찾고자 하는 값),
 print는 함수 내에서 하지 않고 return에 값을 담는다'''
 # lista = [1,4,6,9]
 # def myIndex(myinput1, myinput2):
-#     result = -1
+#     result = -1 #index는 거짓이면 -1 출력
 #     for a in range(len(lista)):
 #         if lista[a] == myinput2:
 #             result = a
@@ -114,11 +114,11 @@ print는 함수 내에서 하지 않고 return에 값을 담는다'''
 # print(r1)
 
 '''함수 내에서 print'''
-lista = [1,4,6,9]
-def myIndex(myinput1, myinput2):
-    result = -1 #없으면 -1 출력
-    for a in range(len(myinput1)):
-        if lista[a] == myinput2:
-            print(a)
-            break
-myIndex(lista, 9)
+# lista = [1,4,6,9]
+# def myIndex(myinput1, myinput2):
+#     result = -1 #index는 거짓이면 -1 출력
+#     for a in range(len(myinput1)):
+#         if lista[a] == myinput2:
+#             print(a)
+#             break
+# myIndex(lista, 9)
