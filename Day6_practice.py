@@ -1,3 +1,4 @@
+'''for_list_statements.py'''
 '''for-break'''
 # lista = ['b', 'b', 'ab', 'a', 'b', 'a']
 # for a in range(len(lista)):
@@ -9,29 +10,6 @@
 # a = 5
 # for dan in range(1,10):
 #     print(f"{a}X{dan} = {a*dan}")
-
-'''while 구구단'''
-# a = 5
-# dan = 0
-# while dan < 9:
-#     dan += 1
-#     print(f"{a}X{dan} = {a*dan}")
-
-'''입력 숫자 계산 구구단'''
-# while True:
-#     a = int(input("입력 값 : "))
-#     if a > 9 or a <= 0:
-#         print("다시 입력")
-#         continue
-#     for dan in range(1,10):
-#         print(f"{a}X{dan} = {a*dan}")
-
-'''while 사용한 구구단 5단~9단까지 한꺼번에 출력'''
-# dan = 4
-# while dan < 9:
-#     dan += 1
-#     for a in range(1,10):
-#         print(f"{dan}X{a} = {a*dan}")
 
 '''for문을 이용한 정렬 알고리즘(sort 미사용)'''
 '''오름차순'''
@@ -66,6 +44,31 @@
 #     newlist.append(listval)
 # print(newlist)
 
+'''!while_statements.py'''
+'''while 구구단'''
+# a = 5
+# dan = 0
+# while dan < 9:
+#     dan += 1
+#     print(f"{a}X{dan} = {a*dan}")
+
+'''입력 숫자 계산 구구단'''
+# while True:
+#     a = int(input("입력 값 : "))
+#     if a > 9 or a <= 0:
+#         print("다시 입력")
+#         continue
+#     for dan in range(1,10):
+#         print(f"{a}X{dan} = {a*dan}")
+
+'''while 사용한 구구단 5단~9단까지 한꺼번에 출력'''
+# dan = 4
+# while dan < 9:
+#     dan += 1
+#     for a in range(1,10):
+#         print(f"{dan}X{a} = {a*dan}")
+
+'''function_statements.py'''
 '''사용자의 input을 받아 input 값의 누적 합 더하기
 100 입력'''
 # def myPlusFunc(myinput):
@@ -95,3 +98,27 @@
 #     if lista[a] == 9:
 #         print(f"index 번호는 {a}")
 #         break
+
+'''위의 for문을 활용해 myIndex라는 함수 생성,
+input 값이 2개(list, 찾고자 하는 값), 
+print는 함수 내에서 하지 않고 return에 값을 담는다'''
+# lista = [1,4,6,9]
+# def myIndex(myinput1, myinput2):
+#     result = -1
+#     for a in range(len(lista)):
+#         if lista[a] == myinput2:
+#             result = a
+#             break
+#     return result
+# r1 = myIndex(lista, 9)
+# print(r1)
+
+'''함수 내에서 print'''
+lista = [1,4,6,9]
+def myIndex(myinput1, myinput2):
+    result = -1 #없으면 -1 출력
+    for a in range(len(myinput1)):
+        if lista[a] == myinput2:
+            print(a)
+            break
+myIndex(lista, 9)
