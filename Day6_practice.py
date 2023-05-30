@@ -1,4 +1,30 @@
+'''!while_statements.py'''
+
+'''while 구구단'''
+# a = 5
+# dan = 0
+# while dan < 9:
+#     dan += 1
+#     print(f"{a}X{dan} = {a*dan}")
+
+'''입력 숫자 계산 구구단'''
+# while True:
+#     a = int(input("입력 값 : "))
+#     if a > 9 or a <= 0:
+#         print("다시 입력")
+#         continue
+#     for dan in range(1,10):
+#         print(f"{a}X{dan} = {a*dan}")
+
+'''while 사용한 구구단 5단~9단까지 한꺼번에 출력'''
+# dan = 4
+# while dan < 9:
+#     dan += 1
+#     for a in range(1,10):
+#         print(f"{dan}X{a} = {a*dan}")
+
 '''for_list_statements.py'''
+
 '''for-break'''
 # lista = ['b', 'b', 'ab', 'a', 'b', 'a']
 # for a in range(len(lista)):
@@ -14,7 +40,8 @@
 '''for문을 이용한 정렬 알고리즘(sort 미사용)'''
 '''오름차순'''
 # lista = [93, 34, 62, 57, 9, 54, 87, 15, 84]
-# for a in range(len(lista)):
+# # for a in range(len(lista)):
+# for a in range(len(lista)-1):
 #     for b in range(a+1, len(lista)):
 #         if lista[a]>lista[b]:
 #             temp = lista[a]
@@ -44,31 +71,8 @@
 #     newlist.append(listval)
 # print(newlist)
 
-'''!while_statements.py'''
-'''while 구구단'''
-# a = 5
-# dan = 0
-# while dan < 9:
-#     dan += 1
-#     print(f"{a}X{dan} = {a*dan}")
-
-'''입력 숫자 계산 구구단'''
-# while True:
-#     a = int(input("입력 값 : "))
-#     if a > 9 or a <= 0:
-#         print("다시 입력")
-#         continue
-#     for dan in range(1,10):
-#         print(f"{a}X{dan} = {a*dan}")
-
-'''while 사용한 구구단 5단~9단까지 한꺼번에 출력'''
-# dan = 4
-# while dan < 9:
-#     dan += 1
-#     for a in range(1,10):
-#         print(f"{dan}X{a} = {a*dan}")
-
 '''function_statements.py'''
+
 '''사용자의 input을 받아 input 값의 누적 합 더하기
 100 입력'''
 # def myPlusFunc(myinput):
